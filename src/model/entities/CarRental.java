@@ -35,14 +35,22 @@ public class CarRental {
 		return vehicle;
 	}
 	
+	public Invoice getInvoice() {
+		return invoice;
+	}
+	
+	public void setInvoice(Invoice invoice) {
+		this.invoice = invoice;
+	}
 	// Método construtor
 	public CarRental() {
 		
 	}
 	
-	public CarRental(Date start, Date finish) {
+	public CarRental(Date start, Date finish, Vehicle vehicle) {
 		this.start = start;
 		this.finish = finish;
+		this.vehicle = vehicle;
 	}
 	
 	// Método
