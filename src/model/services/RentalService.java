@@ -8,7 +8,7 @@ public class RentalService {
 	private Double pricePerHour;
 	private Double pricePerDay;
 	// associação com BrazilTaxService
-	private BrazilTaxService taxService;
+	private TaxService taxService;
 	
 	
 	// Método Getter e Setter
@@ -29,16 +29,16 @@ public class RentalService {
 		return pricePerDay;
 	}
 	
-	public void setBrazilTaxService(BrazilTaxService taxService) {
+	public void setTaxService(TaxService taxService) {
 		this.taxService = taxService;
 	}
 	
-	public BrazilTaxService getTaxService() {
+	public TaxService getTaxService() {
 		return taxService;
 	}
 	
 	// Método Construtor
-	public RentalService(Double pricePerHour, Double pricePerDay, BrazilTaxService taxService) {
+	public RentalService(Double pricePerHour, Double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
 		this.taxService = taxService;
